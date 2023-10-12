@@ -1,8 +1,6 @@
-"use client";
-
 import React from "react";
 
-export default function ButtonsNumber({
+export default function OperandosButtons({
   texto,
   keyPress,
 }: {
@@ -12,9 +10,10 @@ export default function ButtonsNumber({
   const sendKey = (key: string) => {
     keyPress(key);
   };
+
   return (
     <div
-      className='border bg-gradient-to-t from-gray-700 w-1/4 m-1 flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer rounded-md  '
+      className='border  bg-orange-500 w-1/3 m-1 flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer rounded-md  '
       onClick={(e) => {
         sendKey(texto);
       }}
