@@ -13,7 +13,7 @@ export default function OperandosButtons({
 
   return (
     <div
-      className='border  bg-orange-500 w-1/3 m-1 flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer rounded-md  '
+      className='border  bg-orange-500 w-4/6  flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer '
       onClick={(e) => {
         sendKey(texto);
       }}

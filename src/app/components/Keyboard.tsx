@@ -37,7 +37,7 @@ const Keyboard = ({ keyPress }: { keyPress?: any }) => {
         <ButtonsNumber texto='3' keyPress={sendKey} />
         <OperandosButtons texto='+' keyPress={sendKey} />
       </div>
-      <div className='flex flex-row justify-between '>
+      <div className='flex display-flex '>
         <ButtonsNumber texto='0' keyPress={sendKey} />
         <ButtonsNumber texto='.' keyPress={sendKey} />
         <OperandosButtons texto='=' keyPress={sendKey} />
