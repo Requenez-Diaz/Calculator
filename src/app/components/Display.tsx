@@ -10,8 +10,8 @@ const Display = ({
   resultado: number | string;
 }) => {
   return (
-    <div className='border border-gray-950 rounded-t-md p-1 bg-slate-700'>
-      <div className=' border bg-slate-800 p-2 h-20 text-xl text-cyan-50 font-bold text-center align-middle'>
+    <div className=' rounded-t-md p-1 bg-slate-700'>
+      <div className=' bg-slate-800 h-20 text-4xl text-cyan-50 font-bold text-end align-middle'>
         <span>{texto}</span>
       </div>
     </div>

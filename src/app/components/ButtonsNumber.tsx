@@ -16,13 +16,13 @@ export default function ButtonsNumber({
   };
   return (
     <div
-      className='border bg-gradient-to-t from-gray-700 w-4/6  flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer  '
+      className='border border-b-gray-950 bg-slate-500 w-4/6  flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer  '
       onClick={(e) => {
         sendKey(texto);
       }}
     >
       <div
-        className={`h-30 font-serif font-bold text-white flex flex-col justify-center hover:text-violet-50 ${className}`}
+        className={`h-30  font-serif font-bold text-white flex flex-col justify-center hover:text-violet-50 ${className}`}
       >
         <span className=''>{texto}</span>
       </div>

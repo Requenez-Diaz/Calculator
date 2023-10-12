@@ -10,8 +10,8 @@ const Keyboard = ({ keyPress }: { keyPress?: any }) => {
     keyPress(key);
   };
   return (
-    <div className='mt-5 border-1'>
-      <div className='flex flex-row justify-evenly'>
+    <div className=''>
+      <div className='flex flex-row justify-between'>
         <ButtonsNumber texto='C' keyPress={sendKey} />
         <ButtonsNumber texto='+/-' />
         <ButtonsNumber texto='%' />
@@ -37,7 +37,7 @@ const Keyboard = ({ keyPress }: { keyPress?: any }) => {
         <ButtonsNumber texto='3' keyPress={sendKey} />
         <OperandosButtons texto='+' keyPress={sendKey} />
       </div>
-      <div className='flex display-flex '>
+      <div className='flex flex-row justify-between  '>
         <ButtonsNumber texto='0' keyPress={sendKey} />
         <ButtonsNumber texto='.' keyPress={sendKey} />
         <OperandosButtons texto='=' keyPress={sendKey} />
