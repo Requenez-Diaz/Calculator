@@ -10,16 +10,17 @@ export default function OperandosButtons({
   const sendKey = (key: string) => {
     keyPress(key);
   };
+  const customBorderStyle = "border border-black";
 
   return (
     <div
-      className='border  bg-orange-500 w-2/6  flex flex-col items-center hover:bg-slate-300 hover:cursor-pointer '
+      className={`border bg-orange-500 w-20 h-20 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer ${customBorderStyle} `}
       onClick={(e) => {
         sendKey(texto);
       }}
     >
-      <div className='h-30 font-serif font-bold text-gray-950 flex flex-col justify-center hover:text-violet-50'>
-        <span className=''>{texto}</span>
+      <div className='font-serif font-bold text-gray-950 hover:text-violet-50'>
+        <span>{texto}</span>
       </div>
     </div>
   );
