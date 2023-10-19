@@ -10,6 +10,7 @@ export default function OperandosButtons({
   const sendKey = (key: string) => {
     keyPress(key);
   };
+
   const customBorderStyle = "border border-black";
 
   return (
